@@ -1,0 +1,492 @@
+.button-container {
+  display: flex;
+  background-color: rgb(27, 133, 219);
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(27, 133, 219, 0.5) 5px 10px 15px;
+  margin: auto;
+  position: relative;
+  top: 10px;
+
+
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  align-items: stretch;
+  padding: auto;
+  position: relative;
+  top: 8px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.intro {
+  position: relative;
+  color: antiquewhite;
+  text-align: center;
+  top: 50px;
+
+}
+
+span {
+  color: darkgoldenrod;
+}
+
+body {
+
+  background-color: #f4f4f4;
+
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  background: #091540;
+
+}
+
+.blob {
+
+  width: 300px;
+
+  height: 300px;
+
+  border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+
+  overflow: hidden;
+
+  animation: flow 4s infinite ease-in-out;
+  margin: auto;
+  display: block;
+
+}
+
+.blob {
+  position: relative;
+  top: 100px;
+}
+
+.blob img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+@keyframes flow {
+
+  0% {
+
+    border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+
+  }
+
+  35% {
+
+    border-radius: 80% 70% 60% 60% / 80% 70% 60% 60%;
+
+  }
+
+  70% {
+
+    border-radius: 70% 90% 60% 70% / 80% 90% 50% 90%;
+
+  }
+
+  100% {
+
+    border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+
+  }
+
+}
+
+.card {
+  width: 210px;
+  height: 400px;
+  background: black;
+  border-radius: 35px;
+  border: 2px solid rgb(40, 40, 40);
+  padding: 7px;
+  position: relative;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.486);
+  margin: auto;
+  top: 200px;
+}
+
+.card-int {
+  background-image: linear-gradient(to right bottom, #ff0000, #ff0045, #ff0078, #ea00aa, #b81cd7, #8a3ad6, #5746cf, #004ac2, #003d94, #002e66, #001d3a, #020812);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  height: 100%;
+  border-radius: 25px;
+  transition: all 0.6s ease-out;
+  overflow: hidden;
+}
+
+.card:hover .card-int {
+  background-position: 100% 100%;
+}
+
+.top {
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 35%;
+  height: 18px;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.speaker {
+  position: absolute;
+  top: 2px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 40%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgb(20, 20, 20);
+}
+
+.camera {
+  position: absolute;
+  top: 6px;
+  right: 84%;
+  transform: translate(50%, 0%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.048);
+}
+
+.int {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(0, 0, 255, 0.212);
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+  position: absolute;
+  width: 2px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  height: 45px;
+  top: 30%;
+  right: -4px;
+  background-image: linear-gradient(to right, #111111, #222222, #333333, #464646, #595959);
+}
+
+.btn2,
+.btn3 {
+  transform: scale(-1);
+  left: -4px;
+}
+
+.btn2,
+.btn3 {
+  transform: scale(-1);
+  height: 30px;
+}
+
+.btn2 {
+  top: 26%
+}
+
+.btn3 {
+  top: 36%
+}
+
+.hello {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.hidden {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.card:hover .hidden {
+  opacity: 1;
+}
+
+.card:hover .hello {
+  transform: translateY(-20px);
+}
+
+
+.proj {
+  position: relative;
+  top: 280px;
+  margin: auto;
+  text-align: center;
+  color: darkgoldenrod;
+
+}
+
+.proj {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.hey {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.intro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.badge {
+  display: inline-block;
+  width: 8em;
+  margin: auto;
+
+}
+
+.elebadge {
+  display: inline;
+  position: relative;
+  top: 350px;
+  right: 75px;
+  text-align: center;
+}
+
+#intro2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: antiquewhite;
+  text-align: center;
+  position: relative;
+  top: 400px;
+  font-size: x-large;
+  overflow: visible;
+
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 15px 10px;
+  border-radius: 5em;
+  position: relative;
+  top: 450px;
+  z-index: 9;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+.social-heading {
+  color: antiquewhite;
+  position: relative;
+  top: 450px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: darkgoldenrod;
+  z-index: 11;
+}
+
+.footer-main {
+  background-color: #091540;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 470px;
+
+}
+
+.foot-ele {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: darkgoldenrod;
+}
+
+.input12 {
+  max-width: 190px;
+  padding: 15px;
+  font-size: 17px;
+  color: black;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  border: 2px solid #fff;
+  margin-right: -10px;
+}
+
+.button12 {
+  border: none;
+  background-color: #1363DF;
+  text-decoration: none;
+  padding: 15px;
+  padding-bottom: 17px;
+  font-size: 19px;
+  color: #fff;
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+}
+
+.resumeank {
+  position: relative;
+  left: 1260px;
+  top: 500px;
+
+}
+
+.all {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 100px;
+}
+
+.resume-img2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 1230px;
+  top: 500px;
+}
